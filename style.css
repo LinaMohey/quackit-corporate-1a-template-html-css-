@@ -1,0 +1,357 @@
+/* Variables */
+
+:root {
+    --primary-color: #fff;
+    --blue-color: #337ab7;
+    --light-grey: #777;
+}
+
+
+/* Resets */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+/* Base styles */
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+
+/* Header */
+
+div.main-header {
+    justify-content: space-around;
+    background-color: rgb(30, 28, 28);
+    color: var(--light-grey);
+    z-index: 9999;
+    position: fixed;
+    width: 100%;
+}
+
+div.logo {
+    font-size: 0.9rem;
+    padding: 10px;
+    font-weight: 300;
+}
+
+div.logo h2 {
+    font-size: 1.2rem;
+    margin: auto 30px;
+    font-weight: 400;
+}
+
+div.logo h2:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+div.logo a:not(li.first):hover {
+    color: var(--primary-color);
+}
+
+div.logo ul li {
+    margin-right: 10px;
+    padding: 5px;
+}
+
+div.logo li a {
+    color: var(--light-grey);
+}
+
+div.logo li.first a {
+    color: var(--primary-color);
+}
+
+div.main-header form {
+    align-self: center;
+}
+
+div.main-header form input {
+    padding: 10px;
+    width: 200px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+div.main-header form a {
+    color: black;
+    font-size: 0.9rem;
+}
+
+div.main-header form a:hover {
+    background-color: rgb(215, 208, 208);
+}
+
+div.main-header i.fa-solid.fa-bars.fa-2x {
+    padding: 5px;
+    color: var(--primary-color);
+    display: none;
+    background-color: rgb(43, 42, 42);
+    margin: 10px;
+    padding: 5px 15px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+
+/* Section one */
+
+section.welcome-text {
+    background-color: yellowgreen;
+    color: greenyellow;
+    text-align: center;
+    padding: 30px;
+    padding-top: 78px;
+}
+
+section.welcome-text h1 {
+    font-size: 4rem;
+    letter-spacing: 1.2;
+    margin: 10px;
+    font-weight: 300;
+}
+
+section.welcome-text p {
+    font-size: 1.3rem;
+    padding: 10px;
+}
+
+section.welcome-text a {
+    display: inline-block;
+    margin: 5px;
+    font-size: 0.9rem;
+    letter-spacing: 0.3px;
+    font-weight: 400;
+    color: var(--primary-color);
+    z-index: 2;
+    background-color: var(--blue-color);
+}
+
+section.welcome-text a:hover {
+    background-color: #215888;
+}
+
+
+/* Section two */
+
+div.content {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 20px;
+}
+
+div.content h2 {
+    margin-top: 15px;
+    letter-spacing: 0.8px;
+    font-weight: 400;
+}
+
+div.content p {
+    margin: 10px;
+    line-height: 1.5;
+    font-size: 0.8rem;
+    color: var(--light-grey);
+}
+
+div.content span {
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    color: var(--light-grey);
+}
+
+div.boxes {
+    max-width: 1100px;
+    margin: auto;
+}
+
+div.box img {
+    width: 360px;
+    height: 300px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+div.boxes .box a {
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 10px;
+    color: var(--blue-color);
+}
+
+div.boxes .box a:hover {
+    text-decoration: underline;
+}
+
+div.boxes .box p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--light-grey);
+}
+
+
+/* Section three */
+
+section.three {
+    margin-top: 10px;
+    background-color: goldenrod;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+section.three .box img {
+    margin-top: 40px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+section.three .box a {
+    font-size: 1.2rem;
+    color: black;
+}
+
+section.three .box p {
+    color: black;
+}
+
+section.three .box span {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: black;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+section.three .box span:hover {
+    cursor: pointer;
+    background-color: rgb(197, 193, 193);
+}
+
+section.three .box.box-two span {
+    margin-top: 35px;
+}
+
+
+/* Footer */
+
+div.footer {
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+div.footer ul {
+    justify-content: center;
+    margin-top: 40px;
+}
+
+div.footer li a {
+    color: var(--blue-color);
+    padding: 5px;
+}
+
+div.footer li a:hover {
+    text-decoration: underline;
+}
+
+div.footer p {
+    margin-bottom: 40px;
+    margin-top: 10px;
+    color: var(--light-grey);
+}
+
+
+/* Utilities */
+
+.flex {
+    display: flex;
+}
+
+.btn {
+    background-color: var(--primary-color);
+    padding: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+
+/* Tablets Screens */
+
+@media (max-width: 1200px) {
+    body {
+        font-size: 10px;
+    }
+    section.two div.boxes.grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+
+
+/* Mobile Screens */
+
+@media (max-width: 690px) {
+    div.main-header {
+        justify-content: space-between;
+    }
+    div.main-header ul {
+        display: none;
+    }
+    div.logo h2 {
+        text-align: left;
+    }
+    div.main-header form {
+        display: none;
+    }
+    section.two div.boxes img {
+        width: 100%;
+    }
+    section.three div.boxes.grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    div.main-header i.fa-solid.fa-bars.fa-2x {
+        display: inline-block;
+    }
+    section.welcome-text h1 {
+        font-size: 2.6rem;
+        font-weight: 500;
+    }
+}
